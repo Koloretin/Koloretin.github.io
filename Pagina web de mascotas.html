@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Las Mascotas</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('https://i.pinimg.com/736x/d6/f7/b4/d6f7b48522faf16ba45f3a087eb4a5a4.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #3e2c1c;
+    }
+
+    header, nav, section, footer {
+      background-color: rgba(245, 243, 239, 0.82);
+      backdrop-filter: blur(1px);
+    }
+
+    header {
+      background-color: rgba(139, 94, 60, 0.8);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      background-color: rgba(164, 117, 81, 0.8);
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff5e6;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    h2 {
+      color: #5c3b1c;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .card {
+      background-color: rgba(255, 250, 245, 0.92);
+      border: 1px solid #d6c2b3;
+      border-radius: 8px;
+      width: 300px;
+      margin: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(90, 60, 30, 0.15);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: rgba(139, 94, 60, 0.8);
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+    }
+
+    ul img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style-type: square;
+      color: #3e2c1c;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Las Mascotas</h1>
+    <p>Los animales que te pueden dar compañia.</p>
+    <p>Garcia Lopez Gerardo 404</p>
+  </header>
+
+  <nav>
+    <a href="#perros">Perros</a>
+    <a href="#gatos">Gatos</a>
+    <a href="#beneficios">Beneficios</a>
+  </nav>
+
+  <section id="perros">
+    <marquee><h2>🐕 Perros</h2></marquee>
+    <div class="container">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR50p9w0l6Rd4TbSTo6Xh62oxRQYkjTUQKQsQ&s" alt="Perro">
+        <p>Los perros son conocidos como los mejores amigos del hombre. Son leales, cariñosos y muy protectores.</p>
+      </div>
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/77/59/63/7759632837d4c5d76d4bd42f3ec93bcf.jpg" alt="Perro">
+        <p>Existen muchas razas, tamaños y personalidades. Cada perro es único y especial.</p>
+      </div>
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/f3/bf/0c/f3bf0ce6d71c282b5ec9546881808108.jpg" alt="Perro">
+      <p>Los perros tambien tienen diferentes habilidades que te pueden ayudar con tu humor o con diferentes tareas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gatos">
+     <marquee><h2>😽 Gatos</h2></marquee>
+    <div class="container">
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/7b/33/17/7b3317f305ec51b5dc4d4af8dfecbf79.jpg" alt="Gato">
+        <p>Los gatos son animales independientes pero también muy afectuosos. Su ronroneo es relajante y terapéutico.</p>
+      </div>
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/97/2b/b1/972bb1fd2e984dc662938d2a21178e39.jpg" alt="Gato">
+        <p>Requieren menos espacio que los perros y son ideales para apartamentos o espacios pequeños.</p>
+       </div>
+        <div class="card">
+        <img src="https://i.pinimg.com/736x/20/72/2d/20722ded05ba48b6c2dbcbc34d5eb76c.jpg" alt="Gato">
+        <p>Los gatos tambien son conocidos por ser muy espontaneos y aleatorios con sus acciones por lo cual te pueden sacar una sonrisa constantemente. ❤</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="beneficios">
+    <marquee><h2>❤️‍🩹 Beneficios de tener una mascota</h2></marquee>
+    <ul>
+      <img src="https://i.pinimg.com/736x/2e/52/6f/2e526fda00a7857459345ff88a4aec87.jpg" alt="Beneficios de mascotas">
+      <li>Reducción del estrés y la ansiedad</li>
+      <li>Fomento de la actividad física y la responsabilidad</li>
+      <li>Compañía constante y afecto incondicional</li>
+      <li>Mejora en la salud emocional y física</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Las Mascotas - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
