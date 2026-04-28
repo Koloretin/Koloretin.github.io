@@ -9,6 +9,70 @@
   --muted: #6b6b6b;
   --card-shadow: 0 6px 18px rgba(39,92,66,0.08);
 }
+/*Seccion antes de armar ramo*/
+.business-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px,1fr));
+  gap:14px;
+  margin-top:16px;
+}
+
+.info-card{
+  background:#fff;
+  border-radius:14px;
+  padding:12px;
+  box-shadow:var(--card-shadow);
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  transition: transform .15s ease;
+}
+
+.info-card:hover{
+  transform: translateY(-5px);
+}
+
+.info-card img{
+  width:100%;
+  height:120px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+/* Variaciones visuales */
+.info-card.big{
+  grid-column: span 2;
+  display:flex;
+  flex-direction:row;
+  gap:12px;
+  align-items:center;
+}
+
+.info-card.big img{
+  width:120px;
+  height:120px;
+}
+
+.info-card.wide{
+  grid-column: span 2;
+  display:flex;
+  flex-direction:row;
+  gap:12px;
+  align-items:center;
+}
+
+.info-card.highlight{
+  background:linear-gradient(135deg,var(--pink), #fff);
+}
+
+/* Responsive */
+@media(max-width:600px){
+  .info-card.big,
+  .info-card.wide{
+    flex-direction:column;
+    grid-column: span 1;
+  }
+}
 
 /* Fuente Sniglet */
 .sniglet-regular {
