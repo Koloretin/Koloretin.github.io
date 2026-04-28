@@ -73,12 +73,16 @@ qsa('[data-action="home"]').forEach(btn => {
   btn.addEventListener('click', () => showStep(0));
 });
 // Flowers next/back
+
+
+
+
 qs('#flowersNext').addEventListener('click', ()=>{
   if(state.flowers.length < 1){
     alert('Selecciona al menos 1 flor para continuar.');
     return;
   }
-  showStep(2);
+  showStep(3);
 });
 qsa('[data-action="back"]').forEach(btn => btn.addEventListener('click', ()=>{
   // if in intro back returns nothing special
@@ -159,7 +163,7 @@ qs('#paperNext').addEventListener('click', ()=>{
     alert('Selecciona un color para el papel.');
     return;
   }
-  showStep(3);
+  showStep(4);
 });
 
 // Adornments logic
@@ -265,7 +269,7 @@ qs('#adornNext').addEventListener('click', ()=>{
     return;
   }
   // Continue
-  showStep(4);
+  showStep(5);
 });
 
 // Render summary
