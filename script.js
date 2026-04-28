@@ -25,8 +25,9 @@ const palette = [
 const qs = sel => document.querySelector(sel);
 const qsa = sel => Array.from(document.querySelectorAll(sel));
 
+
 // Steps
-const steps = ['step-intro','step-flowers','step-paper','step-adornments','step-summary'];
+const steps = ['step-business','step-intro','step-flowers','step-paper','step-adornments','step-summary'];
 let currentStep = 0;
 
 function showStep(idx){
@@ -39,7 +40,9 @@ function showStep(idx){
 }
 
 // Start button
-qs('#startBtn').addEventListener('click', ()=> showStep(1));
+qs('#startBtn').addEventListener('click', ()=> showStep(2));
+qs('#goToIntro').addEventListener('click', ()=> showStep(1));
+
 
 // Flowers selection
 const flowerCards = qsa('#flowersGrid .card.selectable');
@@ -65,7 +68,10 @@ function toggleFlower(card){
     card.querySelector('.card-check').textContent = '+';
   }
 }
-
+// Inicio
+qsa('[data-action="home"]').forEach(btn => {
+  btn.addEventListener('click', () => showStep(0));
+});
 // Flowers next/back
 qs('#flowersNext').addEventListener('click', ()=>{
   if(state.flowers.length < 1){
